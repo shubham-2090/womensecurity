@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeBottomNevigationMenuSubHome"
+        android:title="Home"
+        android:icon="@drawable/icon_home"/>
+
+    <item
+        android:id="@+id/homeBottomNevigationMenuPersonalDetails"
+        android:title="Personal Details"
+        android:icon="@drawable/icon_personal_details"/>
+
+
+
+</menu>

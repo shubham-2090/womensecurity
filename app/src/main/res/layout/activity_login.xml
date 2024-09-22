@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/black"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/ivloginlogo"
+        android:src="@drawable/srlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvlogintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Login Here"
+        android:textColor="#F60909"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivloginlogo"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvlogintitle">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etloginusername"
+            android:hint="Username"
+            android:textColorHint="#F00909"
+            android:textColor="#ED0909"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/etbgshape"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etloginpassword"
+            android:hint="Password"
+            android:textColorHint="#F00909"
+            android:textColor="#ED0909"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/etbgshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLoginForgetpassword"
+            android:text="Forget password?"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:fontFamily="@font/aldrich"
+            android:paddingRight="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbloginshowhidepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="show password"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:backgroundTint="#F6970B"
+            android:textStyle="italic"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoginlogin"
+            android:text="Login"
+            android:textSize="25sp"
+            android:background="@drawable/btnshape"
+            android:layout_marginTop="10dp"
+            android:layout_margin="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvloginnewuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="new user click here..."
+            android:textColor="#F60909"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/ivloginlogo"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acbtnLoginsigninwithgoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/common_google_signin_btn_text_dark"
+            android:text="Sign In With Google"
+            android:textColor="@color/black"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
